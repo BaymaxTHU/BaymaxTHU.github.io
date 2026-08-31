@@ -96,18 +96,20 @@ a:hover { color: var(--accent-dark); }
 .profile { position: sticky; top: calc(var(--nav-height) + 42px); align-self: start; }
 .avatar {
   width: 170px;
-  height: 202px;
+  height: 170px;
   margin-bottom: 22px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 50%;
   background: var(--soft);
   box-shadow: 0 12px 30px rgb(31 48 58 / 10%);
 }
-.avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; filter: saturate(.82) contrast(1.02); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .profile h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 27px; line-height: 1.2; }
 .profile .cn-name { margin: 3px 0 12px; color: #778491; font-size: 13px; }
 .profile .keywords { margin: 0 0 17px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
 .profile .bio { margin: 0 0 20px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.profile .education-bio { display: grid; gap: 6px; color: #4d5c69; font-size: 12px; line-height: 1.55; }
+.profile .education-bio span { display: block; }
 .profile-meta { display: grid; gap: 9px; padding: 17px 0; margin: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); list-style: none; }
 .profile-meta li { display: grid; grid-template-columns: 18px 1fr; align-items: start; gap: 8px; color: #546372; font-size: 12px; }
 .profile-meta svg { width: 15px; height: 15px; margin-top: 3px; color: var(--accent); }
@@ -216,7 +218,7 @@ a:hover { color: var(--accent-dark); }
   .nav-links { gap: 17px; }
   .nav-links a { font-size: 11px; }
   .page-shell { grid-template-columns: 190px minmax(0, 1fr); gap: 38px; }
-  .avatar { width: 148px; height: 178px; }
+  .avatar { width: 148px; height: 148px; }
 }
 
 @media (max-width: 720px) {
@@ -226,7 +228,7 @@ a:hover { color: var(--accent-dark); }
   .language-switch { margin-left: 14px; padding-left: 14px; }
   .page-shell { display: block; width: min(100% - 32px, 620px); padding-top: 30px; }
   .profile { position: static; display: grid; grid-template-columns: 104px 1fr; column-gap: 20px; padding-bottom: 30px; }
-  .avatar { grid-row: span 5; width: 104px; height: 126px; margin: 0; }
+  .avatar { grid-row: span 5; width: 104px; height: 104px; margin: 0; }
   .profile h1 { align-self: end; font-size: 23px; }
   .profile .cn-name, .profile .keywords, .profile .bio { margin-bottom: 4px; }
   .profile .bio { display: none; }
