@@ -13,7 +13,7 @@
   <meta property="og:description" content="Large Language Models · Generative AI · Multimodal Perception">
   <meta property="og:url" content="https://baymaxthu.github.io/">
   <meta property="og:image" content="https://baymaxthu.github.io/assets/img/og.png">
-  <link rel="stylesheet" href="assets/css/main.css?v=contact-details">
+  <link rel="stylesheet" href="assets/css/main.css?v=qr-dialog">
 </head>
 <body>
   <header class="masthead">
@@ -73,9 +73,7 @@
               <button class="wechat-copy" type="button" aria-label="Copy WeChat ID" hidden>Copy</button>
             </div>
             <span class="wechat-status" role="status" data-copied="WeChat ID copied" data-fallback="WeChat ID selected. Copy it manually."></span>
-            <a class="wechat-qr" href="assets/img/wechat-qr.png">
-              <img src="assets/img/wechat-qr.png" alt="WeChat QR code for BayMaxxyyds" width="736" height="736" loading="lazy">
-            </a>
+            <a class="wechat-qr" href="assets/img/wechat-qr.png">WeChat QR code</a>
           </details>
         </li>
       </ul>
@@ -202,6 +200,13 @@
       </section>
     </article>
   </main>
-  <script src="assets/js/wechat.js" defer></script>
+  <dialog class="wechat-dialog" id="wechat-qr-dialog" aria-labelledby="wechat-qr-title">
+    <div class="wechat-dialog-header">
+      <h2 id="wechat-qr-title">WeChat QR code</h2>
+      <form method="dialog"><button class="wechat-copy" autofocus>Close</button></form>
+    </div>
+    <img src="assets/img/wechat-qr.png" alt="WeChat QR code for BayMaxxyyds" width="736" height="736" loading="lazy">
+  </dialog>
+  <script src="assets/js/wechat.js?v=qr-dialog" defer></script>
 </body>
 </html>

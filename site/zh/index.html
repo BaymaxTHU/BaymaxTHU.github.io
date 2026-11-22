@@ -13,7 +13,7 @@
   <meta property="og:description" content="大语言模型 · 生成式 AI · 多模态视觉感知">
   <meta property="og:url" content="https://baymaxthu.github.io/zh/">
   <meta property="og:image" content="https://baymaxthu.github.io/assets/img/og.png">
-  <link rel="stylesheet" href="../assets/css/main.css?v=contact-details">
+  <link rel="stylesheet" href="../assets/css/main.css?v=qr-dialog">
 </head>
 <body>
   <header class="masthead">
@@ -58,9 +58,7 @@
               <button class="wechat-copy" type="button" aria-label="复制微信号" hidden>复制</button>
             </div>
             <span class="wechat-status" role="status" data-copied="微信号已复制" data-fallback="已选中微信号，请手动复制。"></span>
-            <a class="wechat-qr" href="../assets/img/wechat-qr.png">
-              <img src="../assets/img/wechat-qr.png" alt="BayMaxxyyds 的微信二维码" width="736" height="736" loading="lazy">
-            </a>
+            <a class="wechat-qr" href="../assets/img/wechat-qr.png">微信二维码</a>
           </details>
         </li>
       </ul>
@@ -181,6 +179,13 @@
       </section>
     </article>
   </main>
-  <script src="../assets/js/wechat.js" defer></script>
+  <dialog class="wechat-dialog" id="wechat-qr-dialog" aria-labelledby="wechat-qr-title">
+    <div class="wechat-dialog-header">
+      <h2 id="wechat-qr-title">微信二维码</h2>
+      <form method="dialog"><button class="wechat-copy" autofocus>关闭</button></form>
+    </div>
+    <img src="../assets/img/wechat-qr.png" alt="BayMaxxyyds 的微信二维码" width="736" height="736" loading="lazy">
+  </dialog>
+  <script src="../assets/js/wechat.js?v=qr-dialog" defer></script>
 </body>
 </html>

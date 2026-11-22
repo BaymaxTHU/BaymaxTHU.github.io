@@ -23,3 +23,17 @@ if (contact) {
     }
   });
 }
+
+const qrLink = contact?.querySelector(".wechat-qr");
+const qrDialog = document.querySelector("#wechat-qr-dialog");
+
+if (qrLink && typeof qrDialog?.showModal === "function") {
+  qrLink.setAttribute("aria-haspopup", "dialog");
+  qrLink.setAttribute("aria-controls", qrDialog.id);
+  qrLink.addEventListener("click", (event) => {
+    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+    event.preventDefault();
+    if (!qrDialog.open) qrDialog.showModal();
+  });
+}

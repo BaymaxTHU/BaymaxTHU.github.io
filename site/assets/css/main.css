@@ -163,13 +163,38 @@ a:hover { color: var(--accent-dark); }
 }
 .wechat-status:empty { display: none; }
 .wechat-status { display: block; margin-top: 4px; font-size: 12px; }
-.wechat-qr { display: block; width: min(100%, 190px); margin-top: 8px; }
-.wechat-qr img {
-  display: block;
-  width: 100%;
-  height: auto;
+.profile-meta .wechat-qr {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--accent);
+  font-size: 13px;
+}
+.wechat-qr:hover { text-decoration: underline; }
+.wechat-dialog {
+  width: calc(100% - 24px);
+  max-width: 360px;
+  max-height: calc(100dvh - 24px);
+  padding: 16px;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--heading);
+}
+.wechat-dialog::backdrop { background: rgb(19 33 55 / 55%); }
+.wechat-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.wechat-dialog-header h2 { margin: 0; font-size: 16px; }
+.wechat-dialog-header button { padding: 4px 8px; }
+.wechat-dialog img {
+  display: block;
+  width: min(100%, 320px, max(0px, calc(100dvh - 112px)));
+  height: auto;
+  margin: 0 auto;
 }
 .content { min-width: 0; padding-top: 4px; }
 .anchor { scroll-margin-top: calc(var(--nav-height) + 24px); }
