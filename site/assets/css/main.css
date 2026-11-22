@@ -124,6 +124,40 @@ a:hover { color: var(--accent-dark); }
 .profile-meta li { display: grid; grid-template-columns: 18px 1fr; align-items: start; gap: 9px; color: #516075; font-size: 15px; }
 .profile-meta svg { width: 15px; height: 15px; margin-top: 3px; color: var(--accent); stroke-width: 1.7; }
 .profile-meta a { color: #40506a; }
+.profile-meta .wechat-contact {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  padding: 10px 11px;
+  border: 1px solid #d4e8dc;
+  border-radius: 9px;
+  background: #f4faf6;
+}
+.wechat-account {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+}
+.wechat-account svg { width: 18px; height: 18px; margin: 0; color: #16754e; }
+.wechat-label { display: block; color: #27664d; font-size: 12px; font-weight: 700; line-height: 1.25; }
+.wechat-id { color: var(--heading); font-size: 15px; font-weight: 700; overflow-wrap: anywhere; }
+.wechat-copy {
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 1px solid #cbded2;
+  border-radius: 6px;
+  background: var(--paper);
+  color: #226246;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wechat-copy:hover { background: #e8f4eb; }
+.wechat-copy:focus-visible { outline: 2px solid #16754e; outline-offset: 2px; }
+.wechat-status { padding-left: 26px; color: #226246; font-size: 12px; }
+.wechat-status:not(:empty) { margin-top: 5px; }
 .content { min-width: 0; padding-top: 4px; }
 .anchor { scroll-margin-top: calc(var(--nav-height) + 24px); }
 .intro { padding: 0 0 40px; }
