@@ -237,6 +237,24 @@ a:hover { color: var(--accent-dark); }
 .project-body { padding: 18px 12px 19px 0; }
 .project-label { margin: 0 0 3px; color: #7a8798; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .project h3 { margin: 0; color: #1b2b43; font-size: 19px; font-weight: 700; line-height: 1.4; }
+.publication-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 9px 0;
+}
+.publication-status > * {
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+.publication-venue { background: var(--accent-dark); color: var(--paper); }
+.publication-author { border-color: #b9cef6; background: #eaf1ff; color: #194494; }
+.publication-stage { border-color: #ced9e6; background: #f4f7fb; color: #425675; }
 .project-subtitle { margin: 3px 0 12px; color: var(--muted); font-size: 15px; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 11px; }
 .project-tags span { padding: 2px 8px; border-radius: 99px; background: #edf3ff; color: #244b9d; font-size: 11px; font-weight: 650; }
