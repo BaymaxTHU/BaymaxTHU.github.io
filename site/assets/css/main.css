@@ -158,6 +158,28 @@ a:hover { color: var(--accent-dark); }
 .wechat-copy:focus-visible { outline: 2px solid #16754e; outline-offset: 2px; }
 .wechat-status { padding-left: 26px; color: #226246; font-size: 12px; }
 .wechat-status:not(:empty) { margin-top: 5px; }
+.wechat-qr { margin-top: 8px; border-top: 1px solid #d4e8dc; }
+.wechat-qr summary {
+  padding: 7px 0 0 2px;
+  color: #226246;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wechat-qr summary:hover { color: #124530; }
+.wechat-qr a {
+  display: block;
+  width: min(100%, 240px);
+  margin: 8px auto 0;
+}
+.wechat-qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d4e8dc;
+  border-radius: 7px;
+}
+.wechat-qr :focus-visible { outline: 2px solid #16754e; outline-offset: 2px; }
 .content { min-width: 0; padding-top: 4px; }
 .anchor { scroll-margin-top: calc(var(--nav-height) + 24px); }
 .intro { padding: 0 0 40px; }
