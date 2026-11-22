@@ -99,20 +99,33 @@
           <article class="project">
             <div class="project-index">01</div>
             <div class="project-body">
-              <p class="project-label">Laboratory Research</p>
-              <h3>UDepthPD: Physics-Guided Underwater Monocular Depth Estimation</h3>
-              <p class="project-subtitle">A latent diffusion framework with underwater imaging priors</p>
-              <div class="project-tags"><span>Diffusion</span><span>Depth Estimation</span><span>Stable Diffusion</span></div>
+              <p class="project-label">CVPR 2027 · First Author · Planned Submission</p>
+              <h3>ChartPrism: Scaling Grounded Chart Reasoning via Artist-Audited Trajectories</h3>
+              <p class="project-subtitle">A 60,000-trajectory dataset for tool-assisted chart reasoning</p>
+              <div class="project-tags"><span>Multimodal Reasoning</span><span>Data Curation</span><span>Tool Use</span></div>
               <ul>
-                <li>Designed a three-channel IMT physical prior from grayscale intensity, GDCP transmission, and green/blue channel maxima to preserve structure and wavelength-dependent attenuation cues.</li>
-                <li>Built on Marigold and Stable Diffusion v2.1, concatenating RGB, depth, and prior representations in latent space and fine-tuning the U-Net for one-step inference.</li>
-                <li>Reconstructed high-fidelity depth labels for USOD10K; outperformed baselines on seven metrics (AbsRel 0.1642, δ₁ 0.8962) and demonstrated zero-shot generalization.</li>
+                <li>Used Matplotlib artist metadata to verify chart regions and numerical readings in trajectories with Zoom and Python calls.</li>
+                <li>Fine-tuned vision-language models on the verified trajectories and evaluated them across seven public chart benchmarks.</li>
               </ul>
             </div>
           </article>
 
           <article class="project">
             <div class="project-index">02</div>
+            <div class="project-body">
+              <p class="project-label">CVPR 2027 · First Author · Planned Submission</p>
+              <h3>ChartAdept: Learning to Answer and Act with Verified Chart Trajectories</h3>
+              <p class="project-subtitle">A chart agent that learns when to answer, inspect, compute, or stop</p>
+              <div class="project-tags"><span>Multimodal Agents</span><span>SFT</span><span>GSPO</span></div>
+              <ul>
+                <li>Constructed 90,474 verified chart interactions by checking chart readings, computations, and whether the agent used the returned observations.</li>
+                <li>Combined supervised fine-tuning with GSPO. On Qwen3-VL-4B-Instruct, accuracy rose from 44.40% to 61.00% on CharXiv reasoning and from 40.45% to 58.01% on ChartQAPro.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">03</div>
             <div class="project-body">
               <p class="project-label">Undergraduate Thesis</p>
               <h3>Unified Multimodal Visual Perception</h3>
@@ -123,22 +136,6 @@
                 <li>Unified classes, retrieval samples, and detection regions as candidate sets optimized through input-candidate similarity and maximum likelihood.</li>
                 <li>Applied gradient normalization and sampling-ratio compensation to improve stability in joint training with large-batch tasks.</li>
               </ul>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-index">03</div>
-            <div class="project-body">
-              <p class="project-label">Personal Project</p>
-              <h3>ResearchForge: Evidence-Grounded Paper Understanding Agent</h3>
-              <p class="project-subtitle">An auditable research workflow for understanding papers and developing ideas</p>
-              <div class="project-tags"><span>AI Agent</span><span>Evidence Graph</span><span>Research Tools</span></div>
-              <ul>
-                <li>Built a multi-agent system that imports papers in batches and produces page-cited Paper Cards, editable Idea Cards, and a project-level Idea Library.</li>
-                <li>Implemented cross-paper alignment, Claim → Evidence Graph construction, and comparability audits with incremental updates and conclusion re-review.</li>
-                <li>Designed Research Idea and Critic agents with traceable tool calls, evidence chains, token costs, and human feedback.</li>
-              </ul>
-              <div class="project-links"><a href="https://github.com/BaymaxTHU/ResearchForge" target="_blank" rel="noreferrer">Code on GitHub ↗</a></div>
             </div>
           </article>
         </div>

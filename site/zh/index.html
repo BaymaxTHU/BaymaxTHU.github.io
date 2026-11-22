@@ -78,20 +78,33 @@
           <article class="project">
             <div class="project-index">01</div>
             <div class="project-body">
-              <p class="project-label">实验室科研项目</p>
-              <h3>UDepthPD：物理先验引导的水下单目深度估计</h3>
-              <p class="project-subtitle">潜空间扩散框架</p>
-              <div class="project-tags"><span>Diffusion</span><span>Depth Estimation</span><span>Stable Diffusion</span></div>
+              <p class="project-label">CVPR 2027 · 第一作者 · 待投</p>
+              <h3>ChartPrism：基于图表绘图对象校验的大规模多模态推理数据集</h3>
+              <p class="project-subtitle">面向工具辅助图表推理的 6 万条轨迹</p>
+              <div class="project-tags"><span>多模态推理</span><span>数据构建</span><span>工具调用</span></div>
               <ul>
-                <li>依据水下光传播特性构建由灰度强度、GDCP 透射率与绿/蓝通道最大值组成的 IMT 三通道物理先验。</li>
-                <li>基于 Marigold / Stable Diffusion v2.1，在冻结 VAE 的潜空间中融合 RGB、深度与物理先验，并采用 trailing timestep 实现单步推理。</li>
-                <li>重建 USOD10K 高保真深度标签，七项指标均优于对比方法（AbsRel 0.1642、δ₁ 0.8962），并验证零样本泛化。</li>
+                <li>利用 Matplotlib 绘图对象的元数据，校验含图像放大和 Python 调用的推理轨迹中所定位的图表区域与所读取的数值。</li>
+                <li>使用校验后的轨迹微调视觉语言模型，并在七个公开图表基准上评估。</li>
               </ul>
             </div>
           </article>
 
           <article class="project">
             <div class="project-index">02</div>
+            <div class="project-body">
+              <p class="project-label">CVPR 2027 · 第一作者 · 待投</p>
+              <h3>ChartAdept：基于验证轨迹的图表问答与工具决策</h3>
+              <p class="project-subtitle">让图表智能体学会何时直接回答、查看局部、调用计算工具或停止</p>
+              <div class="project-tags"><span>多模态智能体</span><span>SFT</span><span>GSPO</span></div>
+              <ul>
+                <li>校验图表读数、计算过程及工具观测的实际使用情况，构建 90,474 条图表交互轨迹。</li>
+                <li>结合监督微调与 GSPO，使 Qwen3-VL-4B-Instruct 在 CharXiv 推理上的准确率从 44.40% 提升至 61.00%，在 ChartQAPro 上从 40.45% 提升至 58.01%。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">03</div>
             <div class="project-body">
               <p class="project-label">本科毕业设计</p>
               <h3>多模态统一视觉感知</h3>
@@ -102,22 +115,6 @@
                 <li>将类别、检索样本与检测区域统一为候选集合，通过输入—候选表示相似度求解最大似然目标。</li>
                 <li>采用梯度归一化与采样比例补偿平衡任务梯度及更新频率，提升多任务联合训练稳定性。</li>
               </ul>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-index">03</div>
-            <div class="project-body">
-              <p class="project-label">个人项目</p>
-              <h3>ResearchForge：证据驱动的论文理解 Agent</h3>
-              <p class="project-subtitle">面向论文理解与研究创意的可审计科研工作流</p>
-              <div class="project-tags"><span>AI Agent</span><span>Evidence Graph</span><span>Research Tools</span></div>
-              <ul>
-                <li>构建支持批量导入论文、生成带页码证据的 Paper Card 与可编辑 Idea Card 的多 Agent 系统。</li>
-                <li>实现跨论文对齐、Claim → Evidence Graph 与实验可比性审计，支持增量更新与旧结论重审。</li>
-                <li>设计 Research Idea Agent 与 Critic Agent，并记录工具调用、证据链、Token 成本与人工反馈。</li>
-              </ul>
-              <div class="project-links"><a href="https://github.com/BaymaxTHU/ResearchForge" target="_blank" rel="noreferrer">查看代码 ↗</a></div>
             </div>
           </article>
         </div>
